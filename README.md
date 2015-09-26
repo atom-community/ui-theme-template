@@ -1,4 +1,4 @@
-# UI Theme template
+# Atom UI Theme Template
 
 This is a __starter template__ for creating an Atom UI theme.
 
