@@ -10,7 +10,7 @@ Happy theming! 🚀
 ## Getting started
 
 1. Fork this repository.
-2. Continue with step 2 from [Creating an Interface Theme](https://atom.io/docs/v1.0.17/hacking-atom-creating-a-theme#creating-an-interface-theme)
+2. Continue with step 2 from [Creating a UI Theme](http://flight-manual.atom.io/hacking-atom/sections/creating-a-theme/#creating-a-ui-theme)
 
 If you get stuck somewhere, feel free to create an [issue](https://github.com/atom-community/ui-theme-template/issues/new).
 
