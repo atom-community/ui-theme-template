@@ -12,28 +12,28 @@
 
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
+@text-color:           #fafafa; // pf-black-100
 @text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color-highlight: #00b9e4; // pf-light-blue-400
+@text-color-selected:  #beedf9; // pf-light-blue-100
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    #5bc0de; // light-blue
+@text-color-success: #5cb85c; // green
+@text-color-warning: #f0ad4e; // yellow
+@text-color-error:   #a30000; // red
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-info:    #5bc0de;
+@background-color-success: #5cb85c;
+@background-color-warning: #f0ad4e;
+@background-color-error:   #a30000;
 
-@background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-highlight: #def3ff;
+@background-color-selected:  #0088ce;
+@app-background-color:       #004368;
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
+@base-background-color: #002235;
 @base-border-color:     darken(@base-background-color, 8%);
 
 // Component colors
@@ -60,21 +60,21 @@
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @base-border-color;
-@tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
-@tab-border-color:            @base-border-color;
+@tab-bar-background-color:    #004368; // pf-blue-600
+@tab-bar-border-color:        #00b9e4; // pf-light-blue-400
+@tab-background-color:        #002235; // pf-blue-700
+@tab-background-color-active: #0088ce; // pf-blue-400
+@tab-border-color:            #00b9e4; // pf-light-blue-400
 
 @tree-view-background-color: @base-background-color;
-@tree-view-border-color:     @base-border-color;
+@tree-view-border-color:     #00b9e4; // pf-light-blue-400
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-1: #0088ce; // pf-blue-400
+@ui-site-color-2: #5cb85c; // bootstrap green
+@ui-site-color-3: #ec7a08; // pf-orange-400
+@ui-site-color-4: #D831B0; // pink
+@ui-site-color-5: #f5c12e; // pf-gold-300
 
 // Sizes
 @font-size: 12px;

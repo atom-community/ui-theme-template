@@ -14,8 +14,9 @@
     height: @tab-height;
     line-height: @tab-height;
     font-size: @font-size;
-    border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     &.active {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
@@ -27,10 +28,9 @@
       top: 50%;
       right: @component-padding + 4px; // 4px -> half of icon size
       margin-top: -3px;
-      border-color: @text-color-info;
     }
     &.modified:hover .close-icon {
-      color: currentColor;
+      color: @text-color-warning;
     }
 
 
@@ -39,7 +39,7 @@
       color: @text-color-selected;
     }
     &.active .close-icon:hover {
-      color: @text-color;
+      color: @text-color-success;
     }
 
 

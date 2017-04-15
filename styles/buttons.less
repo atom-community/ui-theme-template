@@ -30,28 +30,28 @@
 
 // Colored buttons -----------------------
 
-.btn.btn-primary { .btn-color(@background-color-info); }
-.btn.btn-info    { .btn-color(@background-color-info); }
-.btn.btn-success { .btn-color(@background-color-success); }
-.btn.btn-warning { .btn-color(@background-color-warning); }
-.btn.btn-error   { .btn-color(@background-color-error); }
+.btn.btn-primary { .btn-color(#0088ce); } // pf-blue
+.btn.btn-info    { .btn-color(#5bc0de); } // bootstrap light-blue
+.btn.btn-success { .btn-color(#5cb85c); } // bootstrap green
+.btn.btn-warning { .btn-color(#f0ad4e); } // bootstrap yellow
+.btn.btn-error   { .btn-color(#a30000); } // pf-red
 
 .btn-color(@bg) {
-  color: @text-color-selected;
+  color: @text-color;
   background-color: @bg;
   &:hover,
   &:focus {
-    background-color: lighten(@bg, 4%);
+    background-color: lighten(@bg, 10%);
   }
   &:active {
-    background-color: darken(@bg, 4%);
+    background-color: darken(@bg, 10%);
   }
   &.selected {
-    background-color: lighten(@bg, 4%);
+    background-color: lighten(@bg, 10%);
   }
   &.selected:focus,
   &.selected:hover {
-    background-color: lighten(@bg, 8%);
+    background-color: lighten(@bg, 20%);
   }
 }
 
