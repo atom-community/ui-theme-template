@@ -1,13 +1,13 @@
 {
-  "name": "ui-theme-template",
+  "name": "blot-ui",
   "theme": "ui",
-  "version": "0.0.0",
-  "description": "A short description of your UI theme",
+  "version": "0.1.0",
+  "description": "Personal theme for Atom ",
   "keywords": [
     "ui",
     "theme"
   ],
-  "repository": "https://github.com/atom-community/ui-theme-template",
+  "repository": "https://github.com/Craio/blot-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
