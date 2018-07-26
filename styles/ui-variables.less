@@ -12,35 +12,36 @@
 
 
 // Text Colors
-@text-color:           #fafafa; // pf-black-100
+@text-color:           #fafafa; // pf-color-black-100
+@text-color-dark:      #292e34;
 @text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: #00b9e4; // pf-light-blue-400
-@text-color-selected:  #beedf9; // pf-light-blue-100
+@text-color-highlight: #00b9e4; // pf-color-light-blue-400
+@text-color-selected:  #beedf9; // pf-color-light-blue-100
 
-@text-color-info:    #5bc0de; // light-blue
-@text-color-success: #5cb85c; // green
-@text-color-warning: #f0ad4e; // yellow
-@text-color-error:   #a30000; // red
+@text-color-info:    #004368;
+@text-color-success: #6ca100;
+@text-color-warning: #b58100;
+@text-color-error:   #a30000;
 
 // Background colors
-@background-color-info:    #5bc0de;
-@background-color-success: #5cb85c;
-@background-color-warning: #f0ad4e;
-@background-color-error:   #a30000;
+@background-color-info:    #39a5dc;
+@background-color-success: #92d400;
+@background-color-warning: #f0ab00;
+@background-color-error:   #cc0000;
 
-@background-color-highlight: #def3ff;
-@background-color-selected:  #0088ce;
-@app-background-color:       #004368;
+@background-color-highlight: #def3ff; // pf-color-blue-50
+@background-color-selected:  #007bba; // pf-color-blue-400
+@app-background-color:       #004368; // pf-color-blue-600
 
 // Base colors
-@base-background-color: #002235;
+@base-background-color: #282d33;
 @base-border-color:     darken(@base-background-color, 8%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: lighten(@base-background-color, 4%);
 @input-border-color:     @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
@@ -60,25 +61,25 @@
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    #004368; // pf-blue-600
-@tab-bar-border-color:        #00b9e4; // pf-light-blue-400
-@tab-background-color:        #002235; // pf-blue-700
-@tab-background-color-active: #0088ce; // pf-blue-400
-@tab-border-color:            #00b9e4; // pf-light-blue-400
+@tab-bar-background-color:    #282d33;
+@tab-bar-border-color:        #127cb8; // pf-color-light-blue-400
+@tab-background-color:        #002235; // pf-color-blue-700
+@tab-background-color-active: #0d669a; // pf-color-blue-400
+@tab-border-color:            #127cb8; // pf-color-light-blue-400
 
 @tree-view-background-color: @base-background-color;
-@tree-view-border-color:     #00b9e4; // pf-light-blue-400
+@tree-view-border-color:     #127cb8; // pf-color-light-blue-400
 
 // Site colors
-@ui-site-color-1: #0088ce; // pf-blue-400
+@ui-site-color-1: #0088ce; // pf-color-blue-400
 @ui-site-color-2: #5cb85c; // bootstrap green
-@ui-site-color-3: #ec7a08; // pf-orange-400
+@ui-site-color-3: #ec7a08; // pf-color-orange-400
 @ui-site-color-4: #D831B0; // pink
-@ui-site-color-5: #f5c12e; // pf-gold-300
+@ui-site-color-5: #f5c12e; // pf-color-gold-300
 
 // Sizes
-@font-size: 12px;
-@input-font-size: 14px;
+@font-size: 16px;
+@input-font-size: 16px;
 
 @disclosure-arrow-size: 12px;
 
@@ -90,5 +91,5 @@
 @tab-height: 30px;
 
 // Misc
-@component-border-radius: 2px;
-@font-family: 'Fira Mono', monospace;
+@component-border-radius: 5px;
+@font-family: “Overpass”,Overpass,“open sans”,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";

@@ -1,0 +1,77 @@
+// Icons
+// -------------------
+
+// Add Font Awesome 5 icons
+
+// -------------------
+
+.icon:before{
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	width: 16px;
+	line-height: 1;
+	position: relative;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Tweak Atom's default icon classes
+.header > .icon-repo:before            { top: 1px; text-align: left; }
+.header > .icon-file-directory:before  { top: 1px }
+
+// Avoid enforcing fixed-width icons in tabs
+.tab > .icon:before { width: auto; }
+
+// ... unless the theme uses proportional units
+.theme-one-dark-ui,
+.theme-one-light-ui{
+	.tab-bar .tab > .title.icon:before{
+		font-size: 1.1em;
+		margin-right: .3em;
+		width: 1em;
+		top: auto;
+	}
+}
+
+// Turn off antialiasing for macOS
+.thicken{
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+// Accentuate an icon's edges
+.sharpen{
+	text-shadow: 0 0 0;
+}
+
+/*============================================================================*
+  FontAwesome
+  http://fortawesome.github.io/Font-Awesome/cheatsheet
+/*============================================================================*/
+.fa { font-family: FontAwesome; font-size: 1rem; }
+
+.android-icon:before      { .fa; content: "\f17b"; }
+.at-icon:before           { .fa; content: "\f1fa"; }
+.audio-icon:before        { .fa; content: "\f028"; }
+.backup-icon:before       { .fa; content: "\f1da"; }
+.book-alt-icon:before     { .fa; content: "\f02d"; }
+.bullhorn-icon:before     { .fa; content: "\f0a1"; }
+.calc-icon:before         { .fa; content: "\f1ec"; }
+.coffee-icon:before       { .fa; content: "\f0f4"; }
+.css3-icon:before         { .fa; content: "\f13c"; }
+.circle-icon:before       { .fa; content: "\f111"; }
+.download-icon:before     { .fa; content: "\f019"; }
+.earth-icon:before        { .fa; content: "\f0ac"; }
+.gears-icon:before        { .fa; content: "\f085"; }
+.html5-icon:before        { .fa; content: "\f13b"; }
+.mobile-icon:before       { .fa; content: "\f10b"; }
+.moon-icon:before         { .fa; content: "\f186"; }
+.music-icon:before        { .fa; content: "\f001"; }
+.print-icon:before        { .fa; content: "\f02f"; }
+.recycle-icon:before      { .fa; content: "\f1b8"; }
+.rss-icon:before          { .fa; content: "\f143"; }
+.smarty-icon:before       { .fa; content: "\f0eb"; }
+.sourcemap-icon:before    { .fa; content: "\f279"; }
+.sun-icon:before          { .fa; content: "\f185"; }
+.toc-icon:before          { .fa; content: "\f03a"; }
+.wechat-icon:before       { .fa; content: "\f1d7"; }

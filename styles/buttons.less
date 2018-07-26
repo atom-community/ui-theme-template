@@ -8,6 +8,9 @@
 .btn {
   color: lighten(@text-color, 6%);
   background-color: @button-background-color;
+  border-radius: 30em;
+  padding-right: 24px;
+  padding-left: 24px;
   &:hover,
   &:focus {
     color: @text-color-highlight;
@@ -27,14 +30,23 @@
   }
 }
 
+.btn {
+  &.btn-info,
+  &.btn-success,
+  &.btn-warning {
+    &.selected {
+      color: @text-color-dark;
+    }
+  }
+}
 
 // Colored buttons -----------------------
 
-.btn.btn-primary { .btn-color(#0088ce); } // pf-blue
-.btn.btn-info    { .btn-color(#5bc0de); } // bootstrap light-blue
-.btn.btn-success { .btn-color(#5cb85c); } // bootstrap green
-.btn.btn-warning { .btn-color(#f0ad4e); } // bootstrap yellow
-.btn.btn-error   { .btn-color(#a30000); } // pf-red
+.btn.btn-primary { .btn-color(#007BBA); } // pf-color-blue-400
+.btn.btn-info    { .btn-color(#7DC3E8); } //
+.btn.btn-success { .btn-color(#92D400); }
+.btn.btn-warning { .btn-color(#F0AB00); }
+.btn.btn-error   { .btn-color(#CC0000); }
 
 .btn-color(@bg) {
   color: @text-color;

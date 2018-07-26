@@ -7,21 +7,29 @@
 
 .tab-bar {
   background-color: @tab-bar-background-color;
-  border-bottom: 1px solid @base-border-color;
+  border-bottom: 0;
+  padding-bottom: 5px;
 
   .tab {
     color: @text-color;
-    height: @tab-height;
+    height: @tab-height * 1.2;
     line-height: @tab-height;
     font-size: @font-size;
-    background-color: @tab-background-color;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    background-color: @tab-bar-background-color;
+    border-bottom: 3px solid transparent;
+    transition: .3s border-bottom ease-out;
     &.active {
-      color: @text-color-selected;
-      background-color: @tab-background-color-active;
+      color: lighten(@tab-background-color-active, 15%);
+      border-bottom: 3px solid @tab-background-color-active;
+      &:hover {
+        border-bottom-color: lighten(@tab-background-color-active, 10%);
+      }
     }
 
+    &:hover {
+      border-bottom-color: lighten(@tab-background-color-active, 10%);
+      cursor: pointer;
+    }
 
     // Modified Icon (the circle) -------------------
     &.modified:not(:hover) .close-icon {
@@ -36,19 +44,19 @@
 
     // Close Icon (the X) -------------------
     .close-icon:hover {
-      color: @text-color-selected;
+      color: lighten(@text-color-success, 10%);
     }
     &.active .close-icon:hover {
-      color: @text-color-success;
+      color: lighten(@text-color-success, 15%);
     }
 
 
     // Dragging -------------------
     // Styles get applied while dragging a tab
     &.is-dragging {
-      background: darken(@tab-background-color, 10%);
+      background: light(@tab-background-color, 10%);
       border-color: transparent;
-      opacity: .5;
+      opacity: .7;
       & .close-icon {
         visibility: hidden;
       }
