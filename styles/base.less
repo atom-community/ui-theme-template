@@ -27,3 +27,13 @@ atom-pane {
     background-color: darken(@base-background-color, 2%);
   }
 }
+atom-text-editor .gutter {
+  background-color: transparent;
+}
+atom-text-editor .gutter .line-number.cursor-line {
+  background-color: @background-color-selected;
+  opacity: 1;
+}
+.debugger-breakpoint-icon-nonconditional {
+  color: @background-color-selected;
+}

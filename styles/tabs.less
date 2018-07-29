@@ -18,6 +18,9 @@
     background-color: @tab-bar-background-color;
     border-bottom: 3px solid transparent;
     transition: .3s border-bottom ease-out;
+    .title::before {
+      margin-top: 6px;
+    }
     &.active {
       color: lighten(@tab-background-color-active, 15%);
       border-bottom: 3px solid @tab-background-color-active;

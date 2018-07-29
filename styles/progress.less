@@ -24,3 +24,32 @@
     display: inline-block;
   }
 }
+progress:not([value]) {
+  appearance: none;
+  border: none;
+  background-color: @background-color-highlight;
+  border-radius: 16px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+}
+progress[value] {
+  appearance: none;
+  border: none;
+  background-color: @background-color-highlight;
+  border-radius: 16px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: @background-color-highlight;
+  border-radius: 16px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-color: @background-color-info;
+  border-radius: 16px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+}
+progress[value]::-moz-progress-bar {
+  background-color: @background-color-highlight;
+  border-radius: 16px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+}

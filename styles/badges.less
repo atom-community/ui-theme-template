@@ -16,4 +16,22 @@
   &.badge-flexible {
     border-radius: 30em;
   }
+  &:hover {
+    background-color: darken(@badge-background-color, 10%);
+  }
+  &.badge-success {
+    &:hover {
+      background-color: darken(@background-color-success, 10%);
+    }
+  }
+  &.badge-warning {
+    &:hover {
+      background-color: darken(@background-color-warning, 10%);
+    }
+  }
+  &.badge-error {
+    &:hover {
+      background-color: darken(@background-color-error, 10%);
+    }
+  }
 }
