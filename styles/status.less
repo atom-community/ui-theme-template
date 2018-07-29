@@ -1,0 +1,28 @@
+
+// Status
+// -------------------
+
+// Override the status styles, due to conflict between button
+// colors and text colors
+
+// -------------------
+
+.status {
+  &-added {
+    color: lighten(@text-color-success, 15%);
+  }
+  &-modified {
+    color: lighten(@text-color-warning, 15%);
+  }
+  &-removed {
+    color: lighten(@text-color-error, 15%);
+  }
+  &-renamed {
+    color: lighten(@text-color-info, 25%);
+  }
+}
+
+.error-messages {
+  color: lighten(@text-color-error, 15%);
+  font-weight: 500;
+}

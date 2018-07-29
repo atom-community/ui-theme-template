@@ -7,48 +7,59 @@
 
 .tab-bar {
   background-color: @tab-bar-background-color;
-  border-bottom: 1px solid @base-border-color;
+  border-bottom: 0;
+  padding-bottom: 5px;
 
   .tab {
     color: @text-color;
-    height: @tab-height;
+    height: @tab-height * 1.2;
     line-height: @tab-height;
     font-size: @font-size;
-    border-right: 1px solid @tab-border-color;
-    background-color: @tab-background-color;
+    background-color: @tab-bar-background-color;
+    border-bottom: 3px solid transparent;
+    transition: .3s border-bottom ease-out;
+    .title::before {
+      margin-top: 6px;
+    }
     &.active {
-      color: @text-color-selected;
-      background-color: @tab-background-color-active;
+      color: lighten(@tab-background-color-active, 15%);
+      border-bottom: 3px solid @tab-background-color-active;
+      &:hover {
+        border-bottom-color: lighten(@tab-background-color-active, 10%);
+      }
     }
 
+    &:hover {
+      border-bottom-color: lighten(@tab-background-color-active, 10%);
+      cursor: pointer;
+    }
 
     // Modified Icon (the circle) -------------------
     &.modified:not(:hover) .close-icon {
       top: 50%;
       right: @component-padding + 4px; // 4px -> half of icon size
       margin-top: -3px;
-      border-color: @text-color-info;
     }
     &.modified:hover .close-icon {
-      color: currentColor;
+      color: @text-color-warning;
     }
 
 
     // Close Icon (the X) -------------------
     .close-icon:hover {
-      color: @text-color-selected;
+      color: lighten(@text-color-success, 10%);
     }
     &.active .close-icon:hover {
-      color: @text-color;
+      color: lighten(@text-color-success, 15%);
     }
 
 
     // Dragging -------------------
     // Styles get applied while dragging a tab
     &.is-dragging {
-      background: darken(@tab-background-color, 10%);
+      background: light(@tab-background-color, 10%);
       border-color: transparent;
-      opacity: .5;
+      opacity: .7;
       & .close-icon {
         visibility: hidden;
       }

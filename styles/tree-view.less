@@ -7,14 +7,27 @@
 
 
 .tree-view-resizer {
-  border-right: 1px solid @base-border-color;
+  border-right: 2px solid @tab-bar-background-color;
 }
 
 .tree-view {
   color: @text-color;
   background-color: @tree-view-background-color;
 
-  .list-item.selected {
-    color: @text-color-selected;
+  .list-item {
+    border-left: 5px solid transparent;
+    &.selected {
+      color: @text-color;
+      background-color: @background-color-selected;
+      border-left: 5px solid @text-color-highlight;
+    }
+  }
+  .list-tree .selected::before {
+    background-color: transparent;
+  }
+  .list-item {
+    &:hover {
+      background-color: @background-color-selected;
+    }
   }
 }

@@ -1,0 +1,31 @@
+
+
+@checkbox-background-color-checked: #0088ce;
+
+
+.input-text,
+.input-search,
+.input-textarea {
+  &:active,
+  &:hover {
+    border-color: @input-border-color-hightlight;
+  }
+}
+.input-checkbox,
+.input-radio,
+.input-toggle {
+  &::before,
+  &::after {
+    background-color: @text-color;
+  }
+  &:checked {
+    background-color: @checkbox-background-color-checked;
+    &:hover {
+      background-color: #00659c;
+    }
+    &:focus {
+      background-color: #00659c;
+      border-color: #7dc3e8;
+    }
+  }
+}
