@@ -19,7 +19,14 @@ atom-text-editor[mini] {
 
 // ------------------------------------------------------------ Main Text Editor
 
-atom-workspace-axis.vertical atom-text-editor.editor {
+atom-workspace-axis.vertical atom-text-editor.editor,
+atom-workspace-axis.vertical .pane-item,
+atom-workspace-axis.vertical .settings-view {
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 16px;
+}
+
+// github pane view fix
+atom-workspace-axis.vertical .github-PaneView {
+  height: calc(100% - 40px);
 }
