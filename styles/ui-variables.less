@@ -2,14 +2,19 @@
 // UI Variables
 // -------------------
 
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
 // Overrides: atom/static/variables/ui-variables.less
 
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
+@dark-tone: #2f2d2c;
+@light-tone: #dcd2cd;
+@accent: crimson;
 
+// @highlight-language: #c5bd99;
+// @cyan: #80bdcc;
+// @blue: #80a4cc;
+// @purple: #a794d0;
+// @green: #90b994;
+// @red: #d08585;
+// @orange: #d0a770;
 
 // Text Colors
 @text-color:           hsl(0,0%,66%);
@@ -30,43 +35,43 @@
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@app-background-color:       @dark-tone;
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: @dark-tone;
+@base-border-color:     @dark-tone;
 
 // Component colors
-@pane-item-background-color: @base-background-color;
+@pane-item-background-color: @dark-tone;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: @dark-tone;
 @input-border-color:     @base-border-color;
 
-@tool-panel-background-color: @base-background-color;
+@tool-panel-background-color: @dark-tone;
 @tool-panel-border-color:     @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-background-color: @dark-tone;
 @inset-panel-border-color:     @base-border-color;
 
-@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-background-color: @dark-tone;
 @panel-heading-border-color:     @base-border-color;
 
 @overlay-background-color: lighten(@base-background-color, 5%);
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color:          lighten(@dark-tone, 10%);
+@button-background-color-hover:    lighten(@dark-tone, 15%);
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    @base-background-color;
+@tab-bar-background-color:    @dark-tone;
 @tab-bar-border-color:        @base-border-color;
-@tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color:        @dark-tone;
+@tab-background-color-active: lighten(@dark-tone, 10%);
 @tab-border-color:            @base-border-color;
 
-@tree-view-background-color: @base-background-color;
+@tree-view-background-color: @dark-tone;
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
