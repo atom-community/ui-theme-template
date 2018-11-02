@@ -1,5 +1,9 @@
 # Distraction free Atom UI Theme
 
+A minimalist UI theme.
+
+Works well with the [distraction free syntax theme](https://atom.io/themes/atom-distraction-free-syntax).
+
 ## Goal
 
 This UI theme highlights only the main parts of the editor (the active tab and the text editor), leaving the other elements darker or hidden.
