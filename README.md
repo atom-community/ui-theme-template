@@ -19,10 +19,10 @@ This UI theme highlights only the main parts of the editor (the active tab and t
 
 ## What it looks like
 
-![base](/home/laurent/Development/atom-distraction-free-ui-theme/screenshots/base.png)
+![base](./screenshots/base.png)
 
-![fuzzy finder](/home/laurent/Development/atom-distraction-free-ui-theme/screenshots/fuzzy finder.png)
+![fuzzy finder](./screenshots/fuzzy finder.png)
 
-![search panel](/home/laurent/Development/atom-distraction-free-ui-theme/screenshots/search panel.png)
+![search panel](./screenshots/search panel.png)
 
-![tree view](/home/laurent/Development/atom-distraction-free-ui-theme/screenshots/tree view.png)
+![tree view](./screenshots/tree view.png)
