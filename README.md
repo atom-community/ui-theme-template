@@ -21,8 +21,8 @@ This UI theme highlights only the main parts of the editor (the active tab and t
 
 ![base](./screenshots/base.png)
 
-![fuzzy finder](./screenshots/fuzzy finder.png)
+![fuzzy finder](./screenshots/fuzzy_finder.png)
 
-![search panel](./screenshots/search panel.png)
+![search panel](./screenshots/search_panel.png)
 
-![tree view](./screenshots/tree view.png)
+![tree view](./screenshots/tree_view.png)
