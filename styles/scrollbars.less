@@ -2,14 +2,16 @@
   width: 6px;
   height: 6px;
 
-  &-track {}
+  &-track {
+    background-color: transparent;
+  }
 
   &-thumb {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: fadeout(@light-tone, 50%);
     border-radius: 3px;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: @light-tone;
     }
 
     &:window-inactive {}
