@@ -16,6 +16,24 @@
   }
 }
 
+atom-pane-resize-handle {
+  border: 0 dashed transparent;
+  transition: border-color 0.3s;
+
+  &.vertical {
+    margin: 0 20px 0;
+    border-top: 4px dotted transparent;
+  }
+
+  &.horizontal {
+    margin: 20px 0 20px;
+    border-left: 4px dotted transparent;
+  }
+
+  &:hover {
+    border-color: fadeout(@light-tone, 50%);
+  }
+}
 
 // Modal -------------------
 // Used on top of the editor, like the Command Palette.
