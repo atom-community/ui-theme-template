@@ -1,58 +1,80 @@
 // Displays selectable tabs above the editor.
 // Overrides: atom/tabs
 
-.tab-bar {
+@tab-height: 30px;
 
+.tab-bar {
   margin: 6px;
+  padding: 0;
+
+  .tab:not(:last-child) {
+    margin-right: 6px;
+  }
 
   .tab {
     height: @tab-height;
-    margin-right: 6px;
-    color: darken(@light-tone, 40%);
     line-height: @tab-height;
-    font-size: @font-size;
-    border-radius: 3px;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
+    color: fadeout(@light-tone, 70%);
+    font-size: 1rem;
+    transition: color 0.3s, background-color 0.3s;
 
-    &:hover,
-    &.active {
-      color: @light-tone;
+    &:hover {
+      color: fadeout(@light-tone, 30%);
       background-color: rgba(255,255,255,0.1);
     }
 
-    // Modified Icon (the circle) -------------------
-    &.modified:not(:hover) .close-icon {
-      top: 50%;
-      right: @component-padding + 4px; // 4px -> half of icon size
-      margin-top: -3px;
+    &.active {
+      color: @light-tone;
     }
 
-    &.modified:hover .close-icon {
-      color: currentColor;
-    }
+    // ------------------------------------------------ "close" icon (the cross)
 
-    // Close Icon (the X) -------------------
     .close-icon {
+      top: 7px;
+      right: 6px;
+      width: 16px;
+      height: 16px;
       color: @light-tone;
       opacity: 0;
       transition: opacity 0.3s;
+      border-radius: 3px;
+
+      &::before {
+        width: 16px;
+        height: 16px;
+        display: block;
+        text-align: center;
+      }
     }
 
     &:hover .close-icon {
       opacity: 1;
 
       &:hover {
-        color: @accent;
+        background-color: @accent;
       }
     }
 
-    // Dragging -------------------
-    // Styles get applied while dragging a tab
+    // -------------------------------------------- "modified" icon (the circle)
+
+    &.modified:not(:hover) .close-icon {
+      left: 0;
+      opacity: 1;
+      border-color: @accent;
+      background-color: @accent;
+    }
+
+    &.modified:hover .close-icon {
+      color: @light-tone;
+    }
+
+    // -------------------------------------------------------- "dragging a tab"
+
     &.is-dragging {
       background: darken(@tab-background-color, 10%);
       border-color: transparent;
       opacity: .5;
+
       & .close-icon {
         visibility: hidden;
       }
@@ -60,26 +82,21 @@
   }
 }
 
-// -------------------------------------------------------------- Editor tab bar
+// --------------------------------------------------------- main editor tab bar
 
 atom-workspace-axis.vertical > atom-pane-container.panes .tab-bar {
-  position: relative;
-  margin: 6px 20px 30px;
+  margin: 6px 20px 0 20px;
+  transition: opacity 0.3s;
+
+  .tab {
+    opacity: 0;
+  }
+
+  &:hover .tab {
+    opacity: 1;
+  }
 
   .tab.active {
-    display: flex;
-    position: absolute;
-    z-index: 3;
-    bottom: -48px;
-    max-width: 100%;
-    height: 40px;
-    padding-left: 0;
-    font-size: 34px;
-    line-height: 40px;
-    background-color: transparent;
-
-    .close-icon {
-        top: -4px;
-    }
+    opacity: 1;
   }
 }
