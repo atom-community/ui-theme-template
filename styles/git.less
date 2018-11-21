@@ -12,6 +12,13 @@
 // ------------------------------------------------------------------ diff panel
 
 atom-pane-container atom-pane .item-views .github-PaneView {
-  background-color: lighten(@dark-tone, 5%);
-  // height: calc(100% - 40px);
+  background-color: @dark-tone-alt;
+
+  .github-HunkView {
+    background-color: transparent;
+
+    .is-new {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
 }
