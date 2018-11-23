@@ -1,9 +1,6 @@
-
-// Tooltips
-// -------------------
-
 // Overrides: Bootstrap's `.tooltip`.
 
+// -------------------------------------------------------------------- Tooltips
 
 .tooltip {
   .tooltip-inner {
@@ -19,5 +16,46 @@
     border-radius: max(2px, @component-border-radius / 2);
     color: @text-color-selected;
     background: @background-color-selected;
+  }
+}
+
+// -------------------------------------------------------------------- Datatips
+
+.datatip-overlay {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+
+  .datatip-container {
+    background-color: transparent;
+  }
+
+  &:hover .datatip-pin-button {
+    opacity: 1;
+  }
+
+  .datatip-pin-button {
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    color: @light-tone;
+    text-align: center;
+    line-height: 20px;
+    border: none;
+    border-radius: 3px;
+    transition: opacity 0.3s, background-color 0.3s;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      color: @light-tone;
+      background-color: crimson;
+    }
   }
 }
