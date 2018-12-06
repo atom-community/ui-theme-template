@@ -17,6 +17,23 @@ This UI theme highlights only the main parts of the editor (the active tab and t
  - many of the borders (panels, tabs, lists) are removed
  - less colors and contrasts
 
+## Recommended custom styles
+
+This custom style configuration do hide some status bar informations.
+
+```
+.status-bar {
+  encoding-selector-status,
+  grammar-selector-status,
+  .file-info,
+  .github-branch,
+  .github-StatusBarTile,
+  .line-ending-tile {
+    display: none;
+  }
+}
+```
+
 ## What it looks like
 
 ![base](./screenshots/base.png)
