@@ -25,6 +25,7 @@
 
     &.active {
       color: @light-tone;
+      font-weight: bolder;
     }
 
     // ------------------------------------------------ "close" icon (the cross)
@@ -85,11 +86,12 @@
 // --------------------------------------------------------- main editor tab bar
 
 atom-workspace-axis.vertical > atom-pane-container.panes .tab-bar {
-  margin: 6px 20px 0 20px;
+  margin: 6px 20px -14px 20px;
+  z-index: 2;
   transition: opacity 0.3s;
 
   .tab {
-    opacity: 0;
+    opacity: 0.5;
   }
 
   &:hover .tab {
