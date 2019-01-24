@@ -21,7 +21,7 @@ This UI theme highlights only the main parts of the editor (the active tab and t
 
 This custom style configuration do hide some status bar informations.
 
-```
+```css
 .status-bar {
   encoding-selector-status,
   grammar-selector-status,
@@ -33,6 +33,23 @@ This custom style configuration do hide some status bar informations.
   }
 }
 ```
+
+And this one do hide the left panel (hover on the left to show).
+
+```css
+.atom-dock-inner.left.atom-dock-open:hover {
+  width: unset;
+}
+.atom-dock-inner.left.atom-dock-open {
+  width: 5px;
+  position: absolute;
+  z-index: 100;
+}
+```
+
+## Recommended packages
+
+[Atom auto resize](https://atom.io/packages/atom-auto-resize)
 
 ## What it looks like
 
