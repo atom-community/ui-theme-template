@@ -1,7 +1,5 @@
-
 // Panels
 // -------------------
-
 // Overrides: atom/static/panels.less
 
 .panel-heading {
@@ -73,11 +71,59 @@ atom-panel.modal {
 
 // ------------------------------------------------------------------- Left pane
 
-atom-dock.left atom-pane {
-  opacity: 0;
-  transition: opacity 0.3s;
+.atom-dock-inner.left {
+  color: @dark-tone-alt;
+  background-color: @dark-tone-alt-lighten;
 
-  &:hover {
-    opacity: 1;
+  .atom-dock-mask,
+  .inset-panel,
+  .tree-view,
+  .tool-panel {
+    background-color: inherit;
   }
+
+  .atom-dock-resize-handle {
+    width: 0;
+  }
+
+  .atom-dock-toggle-button-inner {
+    color: @light-tone;
+  }
+
+  // ---------- tabs
+
+  .tab-bar {
+    margin: 16px 5px 16px 16px;
+    box-shadow: 0 0 9px;
+
+    .tab {
+      &:hover {
+        color: fadeout(@dark-tone-alt, 30%);
+        background-color: fadeout(@light-tone, 30%);
+      }
+
+      &.active {
+        color: @dark-tone-alt;
+        background-color: @light-tone;
+      }
+    }
+  }
+
+}
+
+.atom-dock-inner.left.atom-dock-open:hover {
+  width: unset;
+}
+
+.atom-dock-inner.left.atom-dock-open {
+  position: absolute;
+  z-index: 100;
+  width: 0;
+  border-right: 16px solid @dark-tone-alt-lighten;
+}
+
+// ----------------------------------------------------------------- Bottom pane
+
+atom-panel-container.bottom {
+  margin-left: 16px;
 }
