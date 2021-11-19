@@ -1,5 +1,5 @@
 {
-  "name": "ui-theme-template",
+  "name": "mars-ui",
   "theme": "ui",
   "version": "0.0.0",
   "description": "A short description of your UI theme",
@@ -7,7 +7,7 @@
     "ui",
     "theme"
   ],
-  "repository": "https://github.com/atom-community/ui-theme-template",
+  "repository": "https://github.com/marsisthename/ui-theme-template",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
